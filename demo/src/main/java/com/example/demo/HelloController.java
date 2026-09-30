@@ -2,8 +2,9 @@
 public class HelloController {
 
     // FAKE TEST SECRET - DO NOT USE A REAL KEY for automation testing
-    private String paymentApiKey = "pk_test_LlKkJjHhGgFfDdSsAaPpOoIi";
-    private String dbUrl = "mongodb+srv://user06:pass06@localhost/testdb06";
+    private String paymentApiKey = "pk_live_QqWwEeRrTtYyUuIiOoPpAaSs";
+    private String dbUrl = "mongodb://user05:pass05@localhost:27017/testdb05";
+
 
     @GetMapping("hello ")
     public String Hello() {
@@ -12,6 +13,11 @@ public class HelloController {
 
     @PostMapping
     public ResponseEntity<String> createdStudent() {
+        return null;
+    }
+
+    @PutMapping
+    public ResponseEntity<String> updatedStudent() {
         return null;
     }
 
