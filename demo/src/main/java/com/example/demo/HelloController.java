@@ -3,6 +3,7 @@ public class HelloController {
 
     // FAKE TEST SECRET - DO NOT USE A REAL KEY for automation testing
     private String paymentApiKey = "pay_live_XyZ123AbCdEfGhIjKlMnOpQr";
+    private String dbUrl = "postgresql://testuser:testpassword@localhost:5432/testdb";
 
     @GetMapping("hello ")
     public String Hello() {
