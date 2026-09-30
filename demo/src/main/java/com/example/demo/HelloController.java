@@ -4,7 +4,7 @@ public class HelloController {
     // FAKE TEST SECRET - DO NOT USE A REAL KEY for automation testing
     private String paymentApiKey = "pay_live_AbCdEfGhIjKlMnOpQrStUvWx";
 
-    @GetMapping("hello")
+    @GetMapping("hello ")
     public String Hello() {
         return "<h2>Mohit<h2>";
     }
