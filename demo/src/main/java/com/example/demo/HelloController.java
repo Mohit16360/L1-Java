@@ -6,7 +6,7 @@ public class HelloController {
 
     @GetMapping("hello ")
     public String Hello() {
-        return "<h2>Mohit<h2>";
+        return "<h2>Mohit<h2>" ;
     }
 
     @PostMapping
