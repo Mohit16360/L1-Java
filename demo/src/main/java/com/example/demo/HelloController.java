@@ -1,14 +1,8 @@
-package com.example.demo;
-
-
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class HelloController {
+
+    // FAKE TEST SECRET - DO NOT USE A REAL KEY for automation testing
+    private String paymentApiKey = "pay_live_AbCdEfGhIjKlMnOpQrStUvWx";
 
     @GetMapping("hello")
     public String Hello() {
@@ -21,14 +15,7 @@ public class HelloController {
     }
 
     @PutMapping
-    public ResponseEntity<String> createdStudent() {
+    public ResponseEntity<String> updatedStudent() {
         return null;
     }
-
-    @PostMapping
-    public ResponseEntity<String> createdStudent() {
-        return null;
-    }
-
-
 }
