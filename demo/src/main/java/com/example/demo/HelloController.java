@@ -2,8 +2,8 @@
 public class HelloController {
 
     // FAKE TEST SECRET - DO NOT USE A REAL KEY for automation testing
-    private String paymentApiKey = "pay_live_XyZ123AbCdEfGhIjKlMnOpQr";
-    private String dbUrl = "postgresql://testuser:testpassword123@localhost:5432/testdb";
+    private String paymentApiKey = "pk_test_LlKkJjHhGgFfDdSsAaPpOoIi";
+    private String dbUrl = "mongodb+srv://user06:pass06@localhost/testdb06";
 
     @GetMapping("hello ")
     public String Hello() {
