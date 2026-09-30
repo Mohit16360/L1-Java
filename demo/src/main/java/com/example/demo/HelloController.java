@@ -25,5 +25,10 @@ public class HelloController {
         return null;
     }
 
+    @PostMapping
+    public ResponseEntity<String> createdStudent() {
+        return null;
+    }
+
 
 }
